@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+  float num1, num2, num3, largest;
+
+  // Prompt user to input three numbers
+  printf("Enter the first number: ");
+  scanf("%f", &num1);
+  printf("Enter the second number: ");
+  scanf("%f", &num2);
+  printf("Enter the third number: ");
+  scanf("%f", &num3);
+
+  // Use if-else statements to find the largest number
+  if (num1 >= num2 && num1 >= num3) {
+    largest = num1;
+  }
+  else if (num2 >= num1 && num2 >= num3) {
+    largest = num2;
+  }
+  else {
+    largest = num3;
+  }
+
+  // Print the largest number
+  printf("The largest number is %.2f", largest);
+
+  return 0;
+}
